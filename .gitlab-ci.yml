@@ -189,7 +189,7 @@ test-linux-stable-nextest:
     - SUBSTRATE_TEST_TIMEOUT=1 time cargo test -p substrate-test-utils --release --verbose --locked -- --ignored timeout
     - sccache -s
 
-test-linux-stable-nextest:
+test-linux-stable-nextest-b:
   stage:                           test
   <<:                              *docker-env
   <<:                              *test-refs
